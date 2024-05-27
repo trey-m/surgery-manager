@@ -6,10 +6,10 @@
 
 # Architecture
 
-- Fastify/Vite SSR
-- React
-- SQLite
-- TailwindCSS
+- [Fastify/Vite SSR](https://fastify-vite.dev/)
+- [React](https://react.dev/)
+- [SQLite](https://www.sqlite.org/)
+- [TailwindCSS](https://tailwindcss.com/)
 
 # Screenshots
 
