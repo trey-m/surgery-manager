@@ -39,10 +39,6 @@ export default function Index(props) {
   };
 
   const scheduleSurgery = async () => {
-    console.log({
-      upcomingSurgery: surgery
-    });
-
     const surgeries = await fetcher('http://localhost:3000/api/surgeries/schedule', {
       method: 'POST',
       json: {

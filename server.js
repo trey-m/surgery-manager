@@ -141,8 +141,6 @@ server.post('/api/surgeries/schedule', { schema: scheduleSurgerySchema }, async 
     }
   );
 
-  console.log(schedule);
-
   reply.send({ success: 'OK' });
 });
 
