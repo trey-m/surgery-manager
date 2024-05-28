@@ -85,7 +85,6 @@ const getSurgeriesSchema = {
     }
   }
 };
-
 server.get('/api/surgeries', { schema: getSurgeriesSchema }, async (req, reply) => {
   const surgeries = await server.sqlite.store.all('SELECT * from surgeries');
 
@@ -112,7 +111,7 @@ server.post('/api/surgeries/cancel/:id', { schema: cancelSurgerySchema }, async 
     req.params.id
   );
 
-  reply.send({});
+  reply.send({ success: 'OK' });
 });
 
 const scheduleSurgerySchema = {
